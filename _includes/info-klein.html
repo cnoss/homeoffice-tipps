@@ -1,0 +1,14 @@
+{% assign item = include.item %}
+
+<div class="is-tab-content card is-overview-item">
+	
+	<div class="card-header">
+		<h3 class="card-header-title">{{item.titel}}</h3>
+	</div>
+	
+	<div class="card-content">
+		<div class="content">
+			{{ item.content | markdownify }}
+		</div>
+	</div>
+</div>

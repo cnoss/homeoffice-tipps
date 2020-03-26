@@ -1,0 +1,12 @@
+{% assign furtherTools = site.further_tools %}
+
+<section class="section buildingBlock">
+  <div class="container has-top-seperator">
+   <h2 class="title" id="termine">Weitere Tools und Helferlein</h2>
+    <div class="is-tab-wrap">
+      {% for item in furtherTools %}
+      {% include info-klein.html item=t %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

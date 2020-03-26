@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+{% include head.html %}
+
+<body data-url="{{page.url}}">
+  <section class="hero is-info is-large"
+    style="background-image: url({{ site.baseurl }}/images/home-2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <!-- Hero header: will stick at the top -->
+    {% include hero-header.html %}
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body is-header has-background-radient">
+      <div class="container">
+        <h1 class="title is-1 has-text-shadow">
+          {{ site.name }}
+        </h1>
+        <h2 class="subtitle is-3 has-text-shadow">
+          {{ site.description }}
+        </h2>
+      </div>
+    </div>
+
+  </section>
+
+  {{ content }}
+  {% include footer.html %}
+</body>
+
+</html>
