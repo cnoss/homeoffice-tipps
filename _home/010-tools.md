@@ -1,6 +1,6 @@
 ---
 titel: Tools & was wir damit so machen
-layout: block-simpletext
+layout: block-simpletext-2cols
 additionalClasses: has-top-seperator
 ---
 
